@@ -1,6 +1,13 @@
 
 require_relative 'Person'
+require_relative 'Couple'
 
-john = Person.new('John')
-20.times {john.increment_age}
-puts john.to_s
+alex = Person.new('Alex')
+20.times {alex.increment_age}
+puts alex.to_s
+
+jamie = Person.new('Jamie')
+20.times {jamie.increment_age}
+
+couple = Couple.new(alex, jamie)
+puts couple.to_s
